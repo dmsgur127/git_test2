@@ -1,0 +1,78 @@
+<!--------------------------------
+학번 : 202014076
+이름 : 손은혁 
+과제설명 : 저번시간 hw2_1에 만들었던 자기소개 홈페이지에 스타일을 적용시킨 것으로
+          이번에 추가시킨 것 자기소개 세번째 줄에 게임과 독서에 폰트 스타일을 적용시켜서 눈에 바로 들어오게 만들었으며, 
+          시간표 첫째줄에는 tr 태그에 클래스를 넣어서 글자 크기와 색을 입혔다.
+------------------------------------->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+    td{
+        width:20%;
+        text-align: center;
+    }
+    table, td, tr{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    tr{
+        height: 40px;
+    }
+    p{
+        padding: 0%;
+    }
+    
+    tr.first {
+        font-size: 12px;
+        color: red;
+    }
+</style>
+</head>
+<body>
+    <h1>손은혁</h1>
+
+    <p>저는 이번학기에 하이브리드 앱 프로그래밍을 신청한 <b>202014076학번 손은혁</b>입니다.</p>
+    <p>저의 주전공은 <i>소프트웨어</i>이며, 부전공은 <i>정보통신</i>입니다.</p>
+    <p>취미는 <span style="color: red; font-weight: bold; font-size: 20px;">게임</span>이며, 요즘에는 <span style="color: blue; font-style: italic; font-size: 20px;">독서</span>에 취미로 만들고 싶어 노력하는 중입니다.</p>
+    <p>주식 공부 외에 따로 공부하는 건 <mark>주식 공부</mark>입니다.</p>
+    <p>이번 학기의 목표는 <strong>학점 올 A를 받는 것</strong>이 목표이며, 그러기 위해서 <strong>열심히 노력, 공부</strong>하겠습니다!</p>
+
+    <hr>
+    <br>
+
+    <p><a href="https://youtube.com" target="blank">youtube</a></p>
+    <br>
+    <hr>
+    
+
+    <ol type="1">
+        <li>백엔드 프레임워크</li>
+        <li>코딩테스트 지도</li>
+        <li>서버구축 및 형상관리</li>
+        <li>고급 Java프로그래밍</li>
+        <li>하이브리드 앱 프로그래밍</li>
+        <li>요가</li>
+    </ol>
+
+    <hr>
+    <br>
+
+    <table width=600px>
+        <tr class="first"><td></td><td></td><td rowspan="3">서버구축 및 형상관리</td><td></td><td rowspan="3">고급 Java프로그래밍</td></tr>
+        <tr><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td></tr>
+
+        <tr><td>백엔드 프레임워크</td><td></td><td>백엔드 프레임워크</td><td></td><td rowspan="3">하이브리드 앱 프로그래밍</td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+
+        <tr><td></td><td></td><td></td><td></td><td>요가</td></tr>
+        <tr><td></td><td></td><td></td><td></td><td></td></tr>
+        <tr><td>코딩테스트 지도</td><td></td><td>코딩테스트 지도</td><td></td><td></td></tr>
+    </table>
+
+</body>
+</html>
